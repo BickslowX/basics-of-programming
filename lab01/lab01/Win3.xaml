@@ -1,0 +1,45 @@
+﻿<Window x:Class="lab01.Win3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab01"
+        mc:Ignorable="d"
+        Title="Хрестики-Нолики" Height="450" Width="800" Background="#FF94DBE6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="slice_cake_birthday_cake_dessert_sweet_icon_207992.ico">
+    <Grid x:Name="TicTac">
+        <Button x:Name="f00" Content="▢" HorizontalAlignment="Left" Margin="254,87,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f01" Content="▢" HorizontalAlignment="Left" Margin="309,87,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f02" Content="▢" HorizontalAlignment="Left" Margin="364,87,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f03" Content="▢" HorizontalAlignment="Left" Margin="419,87,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f04" Content="▢" HorizontalAlignment="Left" Margin="474,87,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f10" Content="▢" HorizontalAlignment="Left" Margin="254,135,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f11" Content="▢" HorizontalAlignment="Left" Margin="309,135,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f12" Content="▢" HorizontalAlignment="Left" Margin="364,135,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f13" Content="▢" HorizontalAlignment="Left" Margin="419,135,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f14" Content="▢" HorizontalAlignment="Left" Margin="474,135,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f20" Content="▢" HorizontalAlignment="Left" Margin="254,183,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f21" Content="▢" HorizontalAlignment="Left" Margin="309,183,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f22" Content="▢" HorizontalAlignment="Left" Margin="364,183,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f23" Content="▢" HorizontalAlignment="Left" Margin="419,183,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f24" Content="▢" HorizontalAlignment="Left" Margin="474,183,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f30" Content="▢" HorizontalAlignment="Left" Margin="254,231,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f31" Content="▢" HorizontalAlignment="Left" Margin="309,231,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f32" Content="▢" HorizontalAlignment="Left" Margin="364,231,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f33" Content="▢" HorizontalAlignment="Left" Margin="419,231,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f34" Content="▢" HorizontalAlignment="Left" Margin="474,231,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f40" Content="▢" HorizontalAlignment="Left" Margin="254,279,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f41" Content="▢" HorizontalAlignment="Left" Margin="309,279,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f42" Content="▢" HorizontalAlignment="Left" Margin="364,279,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f43" Content="▢" HorizontalAlignment="Left" Margin="419,279,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Button x:Name="f44" Content="▢" HorizontalAlignment="Left" Margin="474,279,0,0" VerticalAlignment="Top" Width="50" Height="43" Click="Field_Click" FontSize="30"/>
+        <Label Content="Хрестики-Нолики" HorizontalAlignment="Left" Margin="285,26,0,0" VerticalAlignment="Top" Foreground="#FF890505" RenderTransformOrigin="0.504,1.646" FontStyle="Italic" FontWeight="Bold" FontSize="22"/>
+        <Button x:Name="Back3" Content="На головну сторінку" HorizontalAlignment="Left" Margin="44,345,0,0" VerticalAlignment="Top" Width="135" Height="25" FontStyle="Italic" FontWeight="Bold" Click="Back3_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8D6E6E"/>
+                    <GradientStop Color="#FFEC1919" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
