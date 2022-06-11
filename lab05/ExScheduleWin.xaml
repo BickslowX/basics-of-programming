@@ -1,0 +1,21 @@
+﻿<Window x:Class="znoSystem.ExScheduleWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:znoSystem"
+        mc:Ignorable="d"
+        Title="ExScheduleWin" Height="576" Width="1500" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="AbitIDTB" HorizontalAlignment="Left" Margin="171,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="24" TextChanged="AbitIDTB_TextChanged" TextDecorations="{x:Null}" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <DataGrid x:Name="AbitEx1DG" ColumnWidth="*" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="171,113,19,375" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Normal" HorizontalScrollBarVisibility="Disabled"/>
+        <Label Content="ID Абітурієнта:" HorizontalAlignment="Left" Height="28" Margin="20,34,0,0" VerticalAlignment="Top" Width="154" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Екзамен 1:" HorizontalAlignment="Left" Height="28" Margin="46,113,0,0" VerticalAlignment="Top" Width="102" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Екзамен 2:" HorizontalAlignment="Left" Height="28" Margin="46,207,0,0" VerticalAlignment="Top" Width="102" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Екзамен 3:" HorizontalAlignment="Left" Height="28" Margin="46,300,0,0" VerticalAlignment="Top" Width="102" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.48,1.544"/>
+        <DataGrid x:Name="AbitEx2DG" ColumnWidth="*" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="171,207,19,280" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Normal" HorizontalScrollBarVisibility="Disabled"/>
+        <DataGrid x:Name="AbitEx3DG" ColumnWidth="*" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="171,300,19,187" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Normal" HorizontalScrollBarVisibility="Disabled"/>
+        <Label x:Name="AbitSNP" Content="" HorizontalAlignment="Left" Margin="171,80,0,0" VerticalAlignment="Top" Foreground="#FFF6F7F9" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="ESWBackBtn" Content="Повернутися" HorizontalAlignment="Left" Margin="64,414,0,0" VerticalAlignment="Top" Height="78" Width="192" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="18" FontWeight="Bold" FontFamily="Algerian" Click="ESWBackBtn_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,46 @@
+﻿<Window x:Class="znoSystem.AddAbitWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:znoSystem"
+        mc:Ignorable="d"
+        Title="AddAbitWin" Height="544" Width="1134" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Label Content="ID:" HorizontalAlignment="Left" Height="28" Margin="99,54,0,0" VerticalAlignment="Top" Width="45" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Прізвище:" HorizontalAlignment="Left" Height="28" Margin="99,114,0,0" VerticalAlignment="Top" Width="93" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Ім'я:" HorizontalAlignment="Left" Height="28" Margin="99,167,0,0" VerticalAlignment="Top" Width="47" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="1.525,0.449"/>
+        <Label Content="Побатькові:" HorizontalAlignment="Left" Height="28" Margin="99,230,0,0" VerticalAlignment="Top" Width="118" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Дата Народж:" HorizontalAlignment="Left" Height="28" Margin="99,278,0,0" VerticalAlignment="Top" Width="168" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Місто:" HorizontalAlignment="Left" Height="28" Margin="480,54,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Школа:" HorizontalAlignment="Left" Height="28" Margin="816,54,0,0" VerticalAlignment="Top" Width="71" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Вулиця:" HorizontalAlignment="Left" Height="28" Margin="480,107,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.139,1.537"/>
+        <Label Content="Будинок:" HorizontalAlignment="Left" Height="28" Margin="480,167,0,0" VerticalAlignment="Top" Width="86" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Пошт. Індекс:" HorizontalAlignment="Left" Height="28" Margin="480,230,0,0" VerticalAlignment="Top" Width="129" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Телефон:" HorizontalAlignment="Left" Height="28" Margin="480,278,0,0" VerticalAlignment="Top" Width="110" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Дата Випуску:" HorizontalAlignment="Left" Height="28" Margin="816,114,0,0" VerticalAlignment="Top" Width="132" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Середній Бал:" HorizontalAlignment="Left" Height="28" Margin="816,171,0,0" VerticalAlignment="Top" Width="124" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="IDTextBox" HorizontalAlignment="Left" Margin="231,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="SurnameTextBox" HorizontalAlignment="Left" Margin="231,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Margin="231,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="PatronimicTextBox" HorizontalAlignment="Left" Margin="231,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="BDTextBox" HorizontalAlignment="Left" Margin="231,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="StreetTextBox" HorizontalAlignment="Left" Margin="610,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="HouseTextBox" HorizontalAlignment="Left" Margin="610,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="IndexTextBox" HorizontalAlignment="Left" Margin="610,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="PhoneTextBox" HorizontalAlignment="Left" Margin="610,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="GradDateTextBox" HorizontalAlignment="Left" Margin="954,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <TextBox x:Name="AVGTextBox" HorizontalAlignment="Left" Margin="954,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="20" FontWeight="Bold" FontSize="14" FontStyle="Italic" FontFamily="Algerian"/>
+        <ComboBox x:Name="CityComboBox" HorizontalAlignment="Left" Margin="610,57,0,0" VerticalAlignment="Top" Width="130" Height="22" SelectionChanged="CityComboBox_SelectionChanged" FontSize="14" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic"/>
+        <ComboBox x:Name="SchoolComboBox" HorizontalAlignment="Left" Margin="954,57,0,0" VerticalAlignment="Top" Width="130" Height="22" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="AddBackBtn" Content="Повернутися" HorizontalAlignment="Left" Margin="99,394,0,0" VerticalAlignment="Top" Height="59" Width="158" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="16" FontWeight="Bold" FontFamily="Algerian" Click="AddBackBtn_Click"/>
+        <Button x:Name="AddAbitBtn" Content="Додати" HorizontalAlignment="Left" Margin="816,264,0,0" VerticalAlignment="Top" Height="92" Width="268" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="24" FontWeight="Bold" FontFamily="Algerian" Click="AddAbitBtn_Click"/>
+        <Label Content="Змагання" HorizontalAlignment="Left" Height="28" Margin="816,220,0,0" VerticalAlignment="Top" Width="124" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <ComboBox x:Name="PrivilCB" HorizontalAlignment="Left" Margin="954,223,0,0" VerticalAlignment="Top" Width="130" Height="22" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+
+    </Grid>
+</Window>

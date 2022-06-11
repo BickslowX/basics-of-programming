@@ -1,0 +1,17 @@
+﻿<Window x:Class="znoSystem.AbitOnExWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:znoSystem"
+        mc:Ignorable="d"
+        Title="AbitOnExWin" Height="606" Width="679" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid x:Name="AbitOnExDG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="87,70,74,159" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
+        <ComboBox x:Name="ExamNameCB" HorizontalAlignment="Left" Margin="246,34,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ExamNameCB_SelectionChanged" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
+        <Label Content="Назва Предмету:" HorizontalAlignment="Left" Height="28" Margin="87,28,0,0" VerticalAlignment="Top" Width="154" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="AbitOnExEditBtn" Content="Змінити" HorizontalAlignment="Left" Margin="406,450,0,0" VerticalAlignment="Top" Height="78" Width="181" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="18" FontWeight="Bold" FontFamily="Algerian" Click="AbitOnExEditBtn_Click"/>
+        <Button x:Name="AOEBackBtn" Content="Повернутися" HorizontalAlignment="Left" Margin="87,450,0,0" VerticalAlignment="Top" Height="78" Width="181" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="18" FontWeight="Bold" FontFamily="Algerian" Click="AOEBackBtn_Click"/>
+
+    </Grid>
+</Window>

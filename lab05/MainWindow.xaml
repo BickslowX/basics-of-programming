@@ -1,0 +1,37 @@
+﻿<Window x:Class="znoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:znoSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="394" VerticalAlignment="Top" Width="806" Source="/Exam-PNG-File.png" Visibility="Visible" Opacity="0.15" Margin="-8,-68,0,0" StretchDirection="Both" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="9.311"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Інформаційна система обліку результатів ЗНО" HorizontalAlignment="Left" Margin="177,62,0,0" VerticalAlignment="Top" Height="49" Width="469" Foreground="#FFC7F6EC" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontFamily="Algerian" FontStyle="Normal">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.14"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.563"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="AbitListButton" Content="Список Абітурієнтів" HorizontalAlignment="Left" Margin="181,162,0,0" VerticalAlignment="Top" Width="219" Height="48" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FF55D9C0" Foreground="#FF0D3350" Click="AbitListButton_Click"/>
+        <Button x:Name="AbitOnExamButton" Content="Списки на іспити з предмета" HorizontalAlignment="Left" Margin="181,239,0,0" VerticalAlignment="Top" Width="219" Height="48" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FF107050" Foreground="#FF16222B" Click="AbitOnExamButton_Click"/>
+        <Button x:Name="ScheduleButton" Content="Розклад" HorizontalAlignment="Left" Margin="450,162,0,0" VerticalAlignment="Top" Width="219" Height="48" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FF4DD8AD" Foreground="#FF003054" Click="ScheduleButton_Click"/>
+        <Button x:Name="ResultsButton" Content="Результати " HorizontalAlignment="Left" Margin="450,239,0,0" VerticalAlignment="Top" Width="219" Height="48" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Italic" Background="#FF48A284" Foreground="#FF0E1317" Click="ResultsButton_Click"/>
+
+
+    </Grid>
+</Window>
