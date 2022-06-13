@@ -5,36 +5,35 @@ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 xmlns:local="clr-namespace:prac03"
 mc:Ignorable="d"
-Title="Прізвище ІБ. 2022. Основи програмування. Практична робота № 1."
+Title="Петров Леонід. 2022. Основи програмування. Практична робота № 3."
 Height="195.968" Width="757.195"
 WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="AdminMode" Content="Режим Адміністратора"
 HorizontalAlignment="Left" Margin="25,63,0,0"
-VerticalAlignment="Top" Width="232" Height="38" FontSize="18"
-                Click="AdminMode_Click" FontStyle="Italic" FontFamily="Times New
-Roman"/>
+VerticalAlignment="Top" Width="232" Height="38" FontSize="16"
+                Click="AdminMode_Click" FontStyle="Italic" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
         <Label Content="Розмежування повноважень користувачів на основі
 парольної автентифікації" HorizontalAlignment="Left"
 Margin="10,10,0,0" VerticalAlignment="Top" Height="41.533"
-Width="730.4" FontFamily="Book Antiqua" FontSize="18"
+Width="730.4" FontFamily="Arial Black" FontSize="16"
 FontWeight="Bold" Grid.IsSharedSizeScope="True"
 HorizontalContentAlignment="Center"
 VerticalContentAlignment="Center" UseLayoutRounding="False"/>
         <Button x:Name="UserMode" Content="Режим Користувача"
 HorizontalAlignment="Left" Margin="283,63,0,0"
-VerticalAlignment="Top" Width="247" Height="38" FontSize="18"
-FontStyle="Italic" FontFamily="Times New Roman"
-Click="UserMode_Click"/>
+VerticalAlignment="Top" Width="247" Height="38" FontSize="16"
+FontStyle="Italic" FontFamily="Baskerville Old Face"
+Click="UserMode_Click" FontWeight="Bold"/>
         <Button x:Name="UserMode_Copy" Content="Закрити додаток"
 HorizontalAlignment="Left" Margin="25,120,0,0"
-VerticalAlignment="Top" Width="704" Height="24" FontSize="18"
-FontStyle="Italic" FontFamily="Times New Roman"
-Click="UserMode_Copy_Click"/>
+VerticalAlignment="Top" Width="704" Height="24" FontSize="16"
+FontStyle="Italic" FontFamily="Baskerville Old Face"
+Click="UserMode_Copy_Click" FontWeight="Bold"/>
         <Button x:Name="AboutDev" Content="Про розробника"
 HorizontalAlignment="Left" Margin="556,63,0,0"
-VerticalAlignment="Top" Width="173" Height="38" FontSize="18"
-FontStyle="Italic" FontFamily="Times New Roman"
-Click="AboutDev_Click"/>
+VerticalAlignment="Top" Width="173" Height="38" FontSize="16"
+FontStyle="Italic" FontFamily="Baskerville Old Face"
+Click="AboutDev_Click" FontWeight="Bold"/>
     </Grid>
 </Window>

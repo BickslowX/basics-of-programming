@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prac03"
         mc:Ignorable="d"
-        Title="UserFormWPF" Height="450" Width="800">
+        Title="UserFormWPF" Height="547" Width="800">
     <Grid>
-        
+        <Label Content="Авторизація користувача" HorizontalAlignment="Left" Margin="64,45,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Логін користувача" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Пароль користувача" HorizontalAlignment="Left" Margin="23,139,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="loginField" HorizontalAlignment="Left" Margin="184,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="passwdField" HorizontalAlignment="Left" Margin="184,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="AutorBtn" Content="Авторизуватися" HorizontalAlignment="Left" Margin="23,179,0,0" VerticalAlignment="Top" Width="157" Click="AutorBtn_Click" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic" Height="38"/>
+        <Button x:Name="CloseBtnSystem" Content="Вийти з системи" HorizontalAlignment="Left" Margin="185,179,0,0" VerticalAlignment="Top" Width="162" Click="CloseBtnSystem_Click" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic" Height="38"/>
+        <Label Content="Зміна даних користувача" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16" FontWeight="Normal" FontStyle="Normal"/>
+        <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="23,272,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="23,317,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="NewNameField" HorizontalAlignment="Left" Margin="227,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="NewSurnameField" HorizontalAlignment="Left" Margin="227,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="UpdateDataBtn" Content="Оновити дані" HorizontalAlignment="Left" Margin="23,436,0,0" VerticalAlignment="Top" Width="324" Click="UpdateDataBtn_Click" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic" Height="39"/>
+        <Label Content="Новий пароль" HorizontalAlignment="Left" Margin="23,353,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Повторити новий пароль" HorizontalAlignment="Left" Margin="23,394,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="NewPasswdField" HorizontalAlignment="Left" Margin="227,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="NewPasswdField2" HorizontalAlignment="Left" Margin="227,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Реєстрація нового користувача" HorizontalAlignment="Left" Margin="451,54,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="430,104,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="430,139,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="NameField" HorizontalAlignment="Left" Margin="646,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="SurnameField" HorizontalAlignment="Left" Margin="646,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="RegBtn" Content="Зареєструватись" HorizontalAlignment="Left" Margin="430,290,0,0" VerticalAlignment="Top" Width="336" Click="RegBtn_Click" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic" Height="40"/>
+        <Label Content="Повторити пароль" HorizontalAlignment="Left" Margin="428,240,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="passwdRegField2" HorizontalAlignment="Left" Margin="646,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Логін користувача" HorizontalAlignment="Left" Margin="430,173,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Пароль користувача" HorizontalAlignment="Left" Margin="428,208,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="loginRegField" HorizontalAlignment="Left" Margin="646,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="passwdRegField" HorizontalAlignment="Left" Margin="646,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="Close" Content="Закрити режим користувача" HorizontalAlignment="Left" Margin="539,426,0,0" VerticalAlignment="Top" Width="227" Height="49" FontFamily="Baskerville Old Face" FontSize="14" FontWeight="Bold" FontStyle="Italic" Click="Close_Click"/>
+
     </Grid>
 </Window>

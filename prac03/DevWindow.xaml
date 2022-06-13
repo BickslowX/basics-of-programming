@@ -13,28 +13,20 @@ WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 Height="27" Width="564" FontFamily="Times New Roman" FontSize="16"
 FontWeight="Bold" VerticalContentAlignment="Center"
 Margin="38,10,33.2,0" FontStyle="Italic"/>
-        <Label Content="Факультет прикладної математики&#xD;&#xA;Студент гр. КП-
-ХХ&#xD;&#xA;спеціальність 121 – Інженерія ПЗ. &#xD;&#xA;ПІБ"
+        <Label Content="Факультет прикладної математики&#xA;Студент гр. КП-12&#xA;Спеціальність 121 – Інженерія ПЗ. &#xA;Петров Леонід Андрійович"
 HorizontalAlignment="Left"
-VerticalAlignment="Top" Height="75" Width="274" FontFamily="Times
-New Roman" FontSize="14" VerticalContentAlignment="Center"
+VerticalAlignment="Top" Height="75" Width="274" FontFamily="Baskerville Old Face" FontSize="14" VerticalContentAlignment="Center"
 Margin="12,49,0,0"/>
         <Label Content="Версія програмного продукту v.1.0.0"
 HorizontalAlignment="Left" VerticalAlignment="Top" Height="35"
-Width="247" FontFamily="Times New Roman" FontSize="14"
+Width="247" FontFamily="Baskerville Old Face" FontSize="14"
 VerticalContentAlignment="Center" Margin="11,126,0,0"/>
-        <Label Content=" Відомості про
-розробника&#xD;&#xA;Офіційне працевлаштування: с.н.с. ІТТФ
-НАНУ&#xD;&#xA;Робота за сумісництвом: ФПМ
-КПІ&#xD;&#xA;&#xD;&#xA;Контактні дані&#xD;&#xA;Тел.: +38(063) 021–
-06–79&#xD;&#xA;Телеграм: @allif01" HorizontalAlignment="Left"
-VerticalAlignment="Top" Height="127" Width="323" FontFamily="Times
-New Roman" FontSize="14" VerticalContentAlignment="Center"
-Margin="300,44,0,0"/>
+        <Label Content="Контактні дані&#xA;Тел.: +38(099) 914– 90–28&#xA;Телеграм: @bickslowx" HorizontalAlignment="Left"
+VerticalAlignment="Top" Height="63" Width="297" FontFamily="Baskerville Old Face" FontSize="14" VerticalContentAlignment="Center"
+Margin="308,49,0,0"/>
         <Label Content="Індивідуальне завдання. Обмеження на паролі.&#xD;&#xA;
 У паролі повинна бути наявність рядкових і прописних букв, а також
 знаків арифметичних&#xD;&#xA;операцій." HorizontalAlignment="Left"
-VerticalAlignment="Top" Height="63" Width="611" FontFamily="Times
-New Roman" FontSize="14" Margin="12,190,0,0"/>
+VerticalAlignment="Top" Height="63" Width="611" FontFamily="Baskerville Old Face" FontSize="14" Margin="12,190,0,0"/>
     </Grid>
 </Window>

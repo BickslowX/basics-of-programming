@@ -19,6 +19,7 @@ namespace prac03
         DataTable dT;
         int LenTable;
         int index;
+        string[] Users;
         public Administration()
         {
             InitializeComponent();
@@ -32,7 +33,23 @@ namespace prac03
             CorrectRestrictionBtn.IsEnabled = false;
             Connection = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
-
+        private void GetUsers()
+        {
+            sqlConn = new SqlConnection(Connection);
+            sqlConn.Open();
+            if (sqlConn.State == System.Data.ConnectionState.Open)
+            {
+                Data = new SqlDataAdapter("SELECT Login FROM MainTable", sqlConn);
+                dT = new DataTable();
+                Data.Fill(dT);
+                Users = new string[dT.Rows.Count];
+                for(int i = 0; i< dT.Rows.Count; i++)
+                {
+                    Users[i] = dT.Rows[i][0].ToString();
+                }
+            }
+            sqlConn.Close();
+        }
         private void UpdatePasswd_Click(object sender, RoutedEventArgs e)
         {
             sqlConn = new SqlConnection(Connection);
@@ -48,9 +65,10 @@ namespace prac03
                 {
                     strQ = "UPDATE MainTable SET Password ='" + NewPass + "' WHERE Login = 'ADMIN'; ";
                     Com = new SqlCommand(strQ, sqlConn);
-                    Com.ExecuteNonQuery();
+                    MessageBox.Show(Com.ExecuteNonQuery().ToString());
                 }
             }
+            else {MessageBox.Show("Passwords Didn't Match"); }
             sqlConn.Close();
         }
         void UpdateDataTable()
@@ -65,6 +83,11 @@ namespace prac03
                 dataGrid.ItemsSource = dT.DefaultView;
                 LenTable = dT.Rows.Count;
             }
+            UserNameSelected.Content = dT.Rows[0][0].ToString();
+            UserSurnameSelected.Content = dT.Rows[0][1].ToString();
+            UserLoginSelected.Content = dT.Rows[0][2].ToString();
+            UserStatusSelected.Content = dT.Rows[0][3].ToString();
+            UserRestrictionSelected.Content = dT.Rows[0][4].ToString();
             sqlConn.Close();
         }
         private void Prev_Click(object sender, RoutedEventArgs e)
@@ -104,7 +127,9 @@ namespace prac03
                 {
                     strQ = "INSERT INTO MainTable (Name, Surname, Login, Status, Restriction) values('', '', '" + UserLogin + "', 1, 0); ";
                 Com = new SqlCommand(strQ, sqlConn);
-                    Com.ExecuteNonQuery();
+                    GetUsers();
+                    UsersLogins.ItemsSource = Users; UsersLogins.SelectedIndex = 0;
+                    MessageBox.Show(Com.ExecuteNonQuery().ToString());;
                 }
                 UpdateDataTable();
             }
@@ -125,7 +150,7 @@ namespace prac03
                 strQ = "UPDATE MainTable SET Status ='" + UserStatus + "' WHERE Login='" +
                 UsersLogins.SelectedValue.ToString() + "';";
                 Com = new SqlCommand(strQ, sqlConn);
-                Com.ExecuteNonQuery();
+                MessageBox.Show(Com.ExecuteNonQuery().ToString());;
             }
             sqlConn.Close();
             UpdateDataTable();
@@ -140,7 +165,7 @@ namespace prac03
             {
                 strQ = "UPDATE MainTable SET Restriction ='" + UserRestriction + "' WHERE Login = '" + UsersLogins.SelectedValue.ToString() + "'; ";
                 Com = new SqlCommand(strQ, sqlConn);
-                Com.ExecuteNonQuery();
+                MessageBox.Show(Com.ExecuteNonQuery().ToString());;
             }
             sqlConn.Close();
             UpdateDataTable();
@@ -168,8 +193,8 @@ namespace prac03
                 sqlConn.Open();
                 if (sqlConn.State == System.Data.ConnectionState.Open)
                 {
-                    Data = new SqlDataAdapter("SELECT Name, Surname, Login, Status, Restriction FROM MainTable", sqlConn);
-                    dT = new DataTable("Користувачі системи");
+                    Data = new SqlDataAdapter("SELECT Password FROM MainTable where Login='ADMIN'", sqlConn);
+                    dT = new DataTable();
                     Data.Fill(dT);
                     AdmPass = dT.Rows[0][0].ToString();
                 }
@@ -184,6 +209,9 @@ namespace prac03
                 AddUser.IsEnabled = true;
                 CorrectStatusBtn.IsEnabled = true;
                 CorrectRestrictionBtn.IsEnabled = true;
+                UpdateDataTable();
+                GetUsers();
+                UsersLogins.ItemsSource = Users; UsersLogins.SelectedIndex = 0;
             }
             else
             {
@@ -201,6 +229,13 @@ namespace prac03
                 AdminPasswd.Text = "";
                 UsersLogins.ItemsSource = "";
             }
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Hide ();
+            MainWindow mw = new MainWindow();
+            mw.Show();
         }
     }
 }
