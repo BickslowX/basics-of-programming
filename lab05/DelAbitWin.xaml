@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="DelAbitWin" Height="298" Width="407" Background="#FF02231C" ResizeMode="NoResize" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
+        Title="Видалення Абітурієнта" Height="298" Width="407" Background="#FF02231C" ResizeMode="NoResize" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="DelAbitBtn" Content="Видалити" HorizontalAlignment="Left" Margin="134,122,0,0" VerticalAlignment="Top" Height="59" Width="127" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="16" FontWeight="Bold" FontFamily="Algerian" Click="DelAbitBtn_Click"/>
         <Label Content="Введіть номер абітурієнта:" HorizontalAlignment="Left" Margin="25,69,0,0" VerticalAlignment="Top" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold"/>

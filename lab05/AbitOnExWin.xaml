@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="AbitOnExWin" Height="606" Width="679" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Списки з предметів" Height="606" Width="679" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <DataGrid x:Name="AbitOnExDG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="87,70,74,159" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
         <ComboBox x:Name="ExamNameCB" HorizontalAlignment="Left" Margin="246,34,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ExamNameCB_SelectionChanged" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>

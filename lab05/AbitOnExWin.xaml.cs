@@ -61,7 +61,7 @@ namespace znoSystem
             DataTable DT = new DataTable();
             adapter.Fill(DT);
             int ExID = Convert.ToInt32(DT.Rows[0][0].ToString());
-            string sqlQ = "select AbitSurname, AbitName, AbitPatronymic from AbitList AL full join AbitExams AE on AL.AbitID=AE.AbitID where AbitExam1 = " + ExID + " or AbitExam2 = " + ExID + " or AbitExam3 = " + ExID + " order by AbitSurname, AbitName, AbitPatronymic;";
+            string sqlQ = "select AbitSurname as [Прізвище], AbitName as [Ім'я], AbitPatronymic as [Побатькові] from AbitList AL full join AbitExams AE on AL.AbitID=AE.AbitID where AbitExam1 = " + ExID + " or AbitExam2 = " + ExID + " or AbitExam3 = " + ExID + " order by AbitSurname, AbitName, AbitPatronymic;";
             try
             {
                 GetAndDhowData(sqlQ, AbitOnExDG);

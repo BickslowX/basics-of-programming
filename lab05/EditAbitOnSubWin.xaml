@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="EditAbitOnSubWin" Height="418" Width="465" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Зміна вибраних предметів" Height="418" Width="465" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="AbitIDTB" HorizontalAlignment="Left" Margin="211,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="26" FontSize="16" TextChanged="AbitIDTB_TextChanged" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic"/>
         <Label Content="ID Абітурієнта:" HorizontalAlignment="Left" Height="28" Margin="57,41,0,0" VerticalAlignment="Top" Width="154" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>

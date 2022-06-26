@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="ExScheduleWin" Height="576" Width="1500" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Розклад Екзаменів" Height="576" Width="1500" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="AbitIDTB" HorizontalAlignment="Left" Margin="171,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="24" TextChanged="AbitIDTB_TextChanged" TextDecorations="{x:Null}" FontFamily="Algerian" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
         <DataGrid x:Name="AbitEx1DG" ColumnWidth="*" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="171,113,19,375" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" FontFamily="Algerian" FontSize="14" FontWeight="Bold" FontStyle="Normal" HorizontalScrollBarVisibility="Disabled"/>

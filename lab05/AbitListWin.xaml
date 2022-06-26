@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="AbitListWin" Height="623" Width="1266" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Список Абітурієнтів" Height="623" Width="1266" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <DataGrid x:Name="AbitListDG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="46,29,34,152" CellEditEnding="AbitListDG_CellEditEnding" FontFamily="Bahnschrift" FontStyle="Italic" FontWeight="Normal"/>
         <Button x:Name="DelAbit" Content="Видалити Абітурієнта" HorizontalAlignment="Left" Margin="716,487,0,0" VerticalAlignment="Top" Height="70" Width="215" Foreground="#FF0C2D26" Background="#FFC7F6EC" FontSize="16" FontWeight="Bold" FontFamily="Algerian" Click="DelAbit_Click"/>

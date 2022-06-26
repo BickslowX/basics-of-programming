@@ -45,3 +45,19 @@ C:\Users\leope\OneDrive\Рабочий стол\Lab04\ConnectToSQLServer\obj\Deb
 C:\Users\leope\OneDrive\Рабочий стол\Lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.csproj.CoreCompileInputs.cache
 C:\Users\leope\OneDrive\Рабочий стол\Lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.exe
 C:\Users\leope\OneDrive\Рабочий стол\Lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.pdb
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\bin\Debug\ConnectToSQLServer.exe.config
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\bin\Debug\ConnectToSQLServer.exe
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\bin\Debug\ConnectToSQLServer.pdb
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.csproj.AssemblyReference.cache
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\MainWindow.g.cs
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\App.g.cs
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer_MarkupCompile.cache
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer_MarkupCompile.lref
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\MainWindow.baml
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.g.resources
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.Properties.Resources.resources
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.csproj.GenerateResource.cache
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.csproj.CoreCompileInputs.cache
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.exe
+C:\Users\leope\AppData\Local\GitHubDesktop\app-2.9.6\basics-of-programming\lab04\ConnectToSQLServer\obj\Debug\ConnectToSQLServer.pdb

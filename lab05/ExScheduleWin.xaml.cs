@@ -49,7 +49,7 @@ namespace znoSystem
         }
         private void GetAbitEx1()
         {
-            string sqlQ = "select ExamName, Date, StartTime, SchoolName, SchoolStreet,SchoolIndex, Audience, RespPerson " +
+            string sqlQ = "select ExamName as [Назва Екзамену], Date as [Дата], StartTime as [Початок], SchoolName as [Назва школи], SchoolStreet as [Вулиця],SchoolIndex as [Номер будинку], Audience as [Аудиторія], RespPerson as [Відповідальна особа] " +
                           "from AbitList AL " +
                           "full join AbitExams AE on al.AbitID=AE.AbitID " +
                           "full join ExamList1 EL1 on AE.AbitExam1=EL1.ExamID " +
@@ -64,7 +64,7 @@ namespace znoSystem
         }
         private void GetAbitEx2()
         {
-            string sqlQ = "select ExamName, Date, StartTime, SchoolName, SchoolStreet,SchoolIndex, Audience, RespPerson " +
+            string sqlQ = "select ExamName as [Назва Екзамену], Date as [Дата], StartTime as [Початок], SchoolName as [Назва школи], SchoolStreet as [Вулиця],SchoolIndex as [Номер будинку], Audience as [Аудиторія], RespPerson as [Відповідальна особа] " +
                           "from AbitList AL " +
                           "full join AbitExams AE on al.AbitID=AE.AbitID " +
                           "full join ExamList2 EL2 on AE.AbitExam2=EL2.ExamID " +
@@ -79,7 +79,7 @@ namespace znoSystem
         }
         private void GetAbitEx3()
         {
-            string sqlQ = "select ExamName, Date, StartTime, SchoolName, SchoolStreet,SchoolIndex, Audience, RespPerson " +
+            string sqlQ = "select ExamName as [Назва Екзамену], Date as [Дата], StartTime as [Початок], SchoolName as [Назва школи], SchoolStreet as [Вулиця],SchoolIndex as [Номер будинку], Audience as [Аудиторія], RespPerson as [Відповідальна особа] " +
                           "from AbitList AL " +
                           "full join AbitExams AE on al.AbitID=AE.AbitID " +
                           "full join ExamList3 EL3 on AE.AbitExam3=EL3.ExamID " +

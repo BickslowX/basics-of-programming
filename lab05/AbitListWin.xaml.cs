@@ -40,7 +40,7 @@ namespace znoSystem
 
         private void GetAbitList()
         {
-            string sqlQ = "select AbitID, AbitSurname, AbitName, AbitPatronymic, AbitBirth, SD.SchoolName, AbitGradDate, AbitAVG " +
+            string sqlQ = "select AbitID as [ID], AbitSurname as [Прізвище], AbitName as [Ім'я], AbitPatronymic as [Побатькові], AbitBirth as [Дата Народж] , SD.SchoolName as [Назва школи], AbitGradDate as [Дата випуску], AbitAVG as [Середній бал]" +
                            "from dbo.AbitList AL full join SchoolData SD on AL.AbitSchool=SD.SchoolID" +
                            " order by AbitSurname, AbitName;";
             try
@@ -66,7 +66,7 @@ namespace znoSystem
             String editedCellValue = t.Text.ToString();
 
             DataRowView row = (DataRowView)AbitListDG.SelectedItem;
-            ID = row["AbitID"].ToString();
+            ID = row["ID"].ToString();
             if (Col == 1)
                 sqlQ = "UPDATE AbitList SET AbitSurname = '" + editedCellValue + "' WHERE AbitID = " + ID + ";";
             else if (Col == 2)

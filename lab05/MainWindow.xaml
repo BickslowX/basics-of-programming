@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="@Петров Леонід КП-12 1 курс " Height="450" Width="800" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Image HorizontalAlignment="Left" Height="394" VerticalAlignment="Top" Width="806" Source="/Exam-PNG-File.png" Visibility="Visible" Opacity="0.15" Margin="-8,-68,0,0" StretchDirection="Both" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>

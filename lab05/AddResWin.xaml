@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:znoSystem"
         mc:Ignorable="d"
-        Title="AddResWin" Height="500" Width="565" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Додавання результату екзаменів" Height="500" Width="565" Background="#FF02231C" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Label Content="ID Абітурієнта:" HorizontalAlignment="Left" Height="28" Margin="20,44,0,0" VerticalAlignment="Top" Width="154" Foreground="#FFC7F6EC" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
         <Label x:Name="Ex1LB" Content="&lt;Назва&gt;" HorizontalAlignment="Left" Margin="176,133,0,0" VerticalAlignment="Top" Foreground="#FFE1E4E3" FontFamily="Algerian" FontSize="16" FontWeight="Bold" FontStyle="Normal"/>
